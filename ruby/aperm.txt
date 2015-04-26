@@ -1,0 +1,50 @@
+1/Jane Eyre/Emily Brontë/0
+2/Persuasion/Jane Austin/0
+3/Persuasion/Jane Austin/0
+4/Of Mice and Men/John Steinbeck/0
+5/The Time Machine/H.G. Wells/0
+6/East of Eden/John Steinbeck/0
+7/Dr Jekyll and Mr Hyde/Robert Louis Stevenson/0
+8/Animal Farm: A Fairy Story/George Orwell/0
+9/Wuthering Heights/Emily Brontë/2000
+10/Moby Dick/Herman Melville/0
+11/Great Expectations/Charles Dickens/0
+12/The Count of Monte Cristo/Alexandre Dumas/0
+13/Anna Karenina/Leo Tolstoy/0
+14/Pride and Prejudice/Jane Austen/0
+15/Pride and Prejudice/Jane Austen/0
+16/Oranges are Not the Only Fruit/Jeanette Winterson/2999
+17/The Woman in Black/Susan Hill/0
+18/The Woman in Black/Susan Hill/0
+19/The Woman in White/Wilkie Collins/0
+20/Charlotte's Web/Elwyn Brooks White/0
+21/Stuart Little/ Elwyn Brooks White/0
+22/Noughts & Crosses/Malorie Blackman/0
+23/Noughts & Crosses/Malorie Blackman/0
+24/Boys Don't Cry/Malorie Blackman/0
+25/The Hitchhiker's Guide to the Galaxy/Douglas Adams/0
+26/Geek Girl/Holly Smale/4444
+27/Fangirl/Rainbow Rowell/0
+28/The Rainbow/D. H. Lawrence/0
+29/Flatland/Edwin A. Abbott/0
+30/Flatland/Edwin A. Abbott/0
+31/The Red Pony/Steinbeck/0
+32/Waiting for Godot/Samuel Beckett/0
+33/Brave New World/Aldous Huxley/0
+34/Microserfs/Douglas Coupland/0
+35/The Waste Land/T. S. Eliot/0
+36/The Principia/Isaac Newton/0
+37/Divergent/Veronica Roth/0
+38/Go Set a Watchman/Harper Lee/0
+39/Cider with Rosie/Laurie Lee/0
+40/The Bluest Eye/Toni Morrison/0
+41/The Bluest Eye/Toni Morrison/0
+42/Cat's Eye/Margaret Atwood/0
+43/When Mr. Dog Bites/ Brian Conaghan/0
+44/Apple and Rain/Sarah Crossan/0
+45/Tinder/Sally Gardner/0
+46/Cuckoo Song/Frances Hardinge/0
+47/The Fastest Boy In The World/Elizabeth Laird/0
+48/Buffalo Soldier/Tanya Landman/0
+49/The Middle of Nowhere/Geraldine McCaughrean/0
+50/More Than This/Patrick Ness/0
