@@ -1,4 +1,6 @@
-require 'readline'
+# S Gooding sgoodi02 April 2015
+#
+
 require 'pp'
 
 module Day
@@ -89,7 +91,7 @@ class Book
 
   def to_s
      #"#{@id}: #{@title}, by #{@author}"  #both work
-    "#{id}: #{title}, by #{author} & #{due_date}"
+    "#{id}: #{title}, by #{author}"
   end
   #-------read file section--------------------------------------------------------------------------
   #
@@ -105,8 +107,7 @@ class Book
       author     = line_parts[1].chomp
       @due_date  = due_date = nil.to_i
       @@book_class << Book.new(id, title, author, due_date) #class implementation
-    end #do
-    # print_all
+    end
   end
 
   #
@@ -156,12 +157,12 @@ class Book
 
   # finds book at user entered id, put due_date in this book
   def check_out
-    puts '\n'.bg_green
+    puts "\n".bg_green
     puts 'CHECKOUT'.red.bold
 
     puts 'Enter the book id?'.red.bold
     my_book_id = gets.chomp.to_i
-    puts "to member loan #{@loan}"
+
     #loan1 = my_book_id
     # members = Member.new
     # members.get_loan(@book_id_1)
@@ -330,7 +331,8 @@ class Book
         when "2"
           get_author
         when "3"
-          get_id
+          puts 'not operational yet, try another.'
+          book_search #(not working)
         when "4"
           get_search
         when "b"
@@ -387,7 +389,7 @@ class Member < Book
   #
   # 1. Get new member name
   # write new member to array
-  def check_out #issue_card(name_of_member)
+  def new_mem #issue_card(name_of_member)
     puts 'What is your first name?'.red
     member_name = gets.chomp
     member_name.capitalize!
@@ -401,9 +403,9 @@ class Member < Book
     line_parts = lines.last.split('/') # elements split at "/" to make array
     member_id = line_parts[0].to_i+1 # take first element
 
-    print "Member name: #{member_name}. Member id: #{member_id}".blue.bold
+    print "Member name: #{member_name}. Member id: #{member_id}\n\n".blue.bold
     @@member_array << Member.new(member_id, member_name, book_id_1, book_id_2, book_id_3)
-    pp @@member_array  #test
+    # pp @@member_array  #test
   end
 
   #
@@ -445,7 +447,7 @@ class Member < Book
     booklist.read_aperm #1
     members = Member.new
     members.read_members
-    puts "Send overdue noice.".red.bold
+    puts "Send overdue notices.".red.bold
     @@member_array.each do |member|
       if member.book_id_1 > 0
            @@book_class.each do |book|
@@ -561,12 +563,18 @@ class Library
       booklist = Book.new
       print "\n".bg_gray
       puts "MAIN LIBRARY MENU".bold
-      puts "Check out(1), Check in(2), Search(3), Add member(4), Send overdue notics(5), Quit(q), Initialize(i) wipes borrowing."
+      puts "(1) Check out (not finished)"
+      puts "(2) Check in  (not finished)"
+      puts "(3) Search"
+      puts "(4) Add member"
+      puts "(5) Send overdue notices"
+      puts "(q) Quit"
+      puts "(i) Initialise, wipes borrowing"
       puts "Enter a number to Search".blue
       print ">".blue.bold
 
       controls = gets.chomp
-      if controls == "Q"
+      if controls == "q"
         exit
       else
         case controls
@@ -603,15 +611,15 @@ class Library
   def initialize_menu #s
     booklist = Book.new
     booklist.read_collection#1.
-    booklist.checkout_member
+    # booklist.checkout_member
     booklist.write_array_to_file
   end
 
   def run_menu
     booklist = Book.new
     booklist.read_aperm #1
-    # booklist.check_out
-    # booklist.get_loan#4.
+    booklist.check_out
+    #booklist.get_loan#4.
     booklist.write_array_to_file
   end
 
@@ -619,20 +627,21 @@ class Library
     booklist = Book.new
     booklist.read_aperm #1
     booklist.check_out
-    # booklist.get_loan#4.
-    # booklist.write_array_to_file
+    booklist.get_loan#4.
+    booklist.write_array_to_file
   end
   #
-  # def checkin_menu
-  #
-  # end
+  def checkin_menu
+    booklist = Book.new
+    booklist.read_aperm #1
+  end
 
   def member_menu
     members = Member.new
     members.read_members
-    members.checkout_member
+    members.new_mem
     members.write_array_to_file
-    members.checkout_member
+
   end
 
   def overdue_menu #5

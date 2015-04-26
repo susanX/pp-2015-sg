@@ -1,19 +1,19 @@
-1/Jane Eyre/Emily Brontë/0
+1/Jane Eyre/Emily Brontë/2025
 2/Persuasion/Jane Austin/0
 3/Persuasion/Jane Austin/0
-4/Of Mice and Men/John Steinbeck/0
+4/Of Mice and Men/John Steinbeck/2026
 5/The Time Machine/H.G. Wells/0
 6/East of Eden/John Steinbeck/0
 7/Dr Jekyll and Mr Hyde/Robert Louis Stevenson/0
 8/Animal Farm: A Fairy Story/George Orwell/0
-9/Wuthering Heights/Emily Brontë/2000
+9/Wuthering Heights/Emily Brontë/0
 10/Moby Dick/Herman Melville/0
 11/Great Expectations/Charles Dickens/0
 12/The Count of Monte Cristo/Alexandre Dumas/0
 13/Anna Karenina/Leo Tolstoy/0
 14/Pride and Prejudice/Jane Austen/0
 15/Pride and Prejudice/Jane Austen/0
-16/Oranges are Not the Only Fruit/Jeanette Winterson/2999
+16/Oranges are Not the Only Fruit/Jeanette Winterson/0
 17/The Woman in Black/Susan Hill/0
 18/The Woman in Black/Susan Hill/0
 19/The Woman in White/Wilkie Collins/0
@@ -23,7 +23,7 @@
 23/Noughts & Crosses/Malorie Blackman/0
 24/Boys Don't Cry/Malorie Blackman/0
 25/The Hitchhiker's Guide to the Galaxy/Douglas Adams/0
-26/Geek Girl/Holly Smale/4444
+26/Geek Girl/Holly Smale/0
 27/Fangirl/Rainbow Rowell/0
 28/The Rainbow/D. H. Lawrence/0
 29/Flatland/Edwin A. Abbott/0
